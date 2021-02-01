@@ -10,9 +10,9 @@ const Greeting = () => {
     }
    return(
     <>
-        <header>
-            <h1>Test</h1>
-        </header>
+        <body>
+            <p className= "greeting">Hi, {name} ! It is nice to meet you virtually!"</p>
+        </body>
     </>
    );
 };
