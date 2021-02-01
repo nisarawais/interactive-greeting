@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Greeting = () => {
 
+    const [name, setName] = useState({});
+    const handleChange = event => {
+        setName({
+            ...name, [event.target.name]: event.target.value
+        });
+    }
    return(
     <>
         <header>

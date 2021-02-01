@@ -5,9 +5,13 @@ import Greeting from './component/Greeting';
 
 const App = () => {
     return(
-        <div className = "container">
-            <Greeting/>
-        </div>
+        <>
+         <input
+            onChange={({target: {value}}) => setName(value)}
+            placeholder="Enter your name"
+            />
+        <Greeting name={name}/>
+        </>
     );
 }
 
